@@ -9,8 +9,8 @@ dataset, info = tfd.load('conv_ai/2', with_info=True)
 train_data = dataset['train']
 validation_data = dataset['validation']
 
-```
-Define the model
+``` 
+``` 
 
 model = tf.keras.Sequential([
     tf.keras.layers.Input(shape=(), dtype=tf.string),
@@ -31,6 +31,7 @@ model.compile(optimizer='adam',
 ```
 
 model.fit(train_data,
+
           validation_data=validation_data,
           epochs=10)
 
