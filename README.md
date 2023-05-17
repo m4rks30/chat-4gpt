@@ -10,7 +10,8 @@ train_data = dataset['train']
 validation_data = dataset['validation']
 
 ```
-# Define the model
+Define the model
+
 model = tf.keras.Sequential([
     tf.keras.layers.Input(shape=(), dtype=tf.string),
     tf.keras.layers.experimental.preprocessing.TextVectorization
@@ -30,7 +31,6 @@ model.compile(optimizer='adam',
 ```
 
 model.fit(train_data,
-
           validation_data=validation_data,
           epochs=10)
 
